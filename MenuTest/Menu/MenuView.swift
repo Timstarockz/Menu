@@ -226,6 +226,16 @@ extension MenuView {
     
 }
 
+// MARK: - Static Interface
+
+extension MenuView {
+    
+    static func dismissMenus() {
+        NotificationCenter.default.post(MenuView.dismissMenu)
+    }
+    
+}
+
 // MARK: - Private Interface
 
 extension MenuView {
