@@ -1,5 +1,5 @@
 PODS:
-  - Menu (0.0.1):
+  - Menu (0.0.8):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  Menu: b70a8355965c71b69cdf68d3017f7bd01ae83014
+  Menu: 45a95adf2d606036389019f8517c8269569da4cf
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: afebc92a43de9a4126ebd56e0e1a92c01196be88

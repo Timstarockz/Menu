@@ -332,36 +332,36 @@ extension MenuView {
 
 extension MenuView {
     
-    public override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        guard let contents = contents else {
-            return super.point(inside: point, with: event)
-        }
-        
-        let contentsPoint = convert(point, to: contents)
-        
-        if !contents.pointInsideMenuShape(contentsPoint) {
-            hideContents(animated: true)
-        }
-        
-        return contents.pointInsideMenuShape(contentsPoint)
-    }
-    
-    public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        guard let contents = contents else {
-            return super.hitTest(point, with: event)
-        }
-        
-        let contentsPoint = convert(point, to: contents)
-        
-        if !contents.pointInsideMenuShape(contentsPoint) {
-            hideContents(animated: true)
-        } else {
-            return contents.hitTest(contentsPoint, with: event)
-        }
-        
-        return super.hitTest(point, with: event)
-    }
-    
+//    public override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+//        guard let contents = contents else {
+//            return super.point(inside: point, with: event)
+//        }
+//        
+//        let contentsPoint = convert(point, to: contents)
+//        
+//        if !contents.pointInsideMenuShape(contentsPoint) {
+//            hideContents(animated: true)
+//        }
+//        
+//        return contents.pointInsideMenuShape(contentsPoint)
+//    }
+//    
+//    public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+//        guard let contents = contents else {
+//            return super.hitTest(point, with: event)
+//        }
+//        
+//        let contentsPoint = convert(point, to: contents)
+//        
+//        if !contents.pointInsideMenuShape(contentsPoint) {
+//            hideContents(animated: true)
+//        } else {
+//            return contents.hitTest(contentsPoint, with: event)
+//        }
+//        
+//        return super.hitTest(point, with: event)
+//    }
+//    
 }
 
 // MARK: - Theming
