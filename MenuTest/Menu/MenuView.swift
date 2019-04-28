@@ -23,7 +23,7 @@ public class MenuView: UIView, MenuThemeable, UIGestureRecognizerDelegate {
     
     // MARK: - Public
     
-    public static let dismissMenu = Notification.Name("CodeaDissmissMenu")
+    public static let dismissMenu = Notification.Name("CodeaDismissMenu")
     public static let menuWillPresent = Notification.Name("CodeaMenuWillPresent")
     
     public var title: String {
