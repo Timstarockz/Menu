@@ -231,7 +231,7 @@ extension MenuView {
 extension MenuView {
     
     public static func dismissMenus() {
-        NotificationCenter.default.post(MenuView.dismissMenu)
+        NotificationCenter.default.post(name: MenuView.dismissMenu, object: nil)
     }
     
 }
