@@ -172,8 +172,17 @@ public class MenuView: UIView, MenuThemeable, UIGestureRecognizerDelegate {
         case .cancelled:
             fallthrough
         case .ended:
-            hideContents(animated: true)
+            
+            let gestureEnd = Date()
             contents?.isInteractiveDragActive = false
+            if gestureEnd.timeIntervalSince(gestureStart) > 0.3 {
+                selectPositionAndHideContents(sender)
+            }
+            
+            // hide the menu on touch end:
+            //contents?.isInteractiveDragActive = false
+            //hideContents(animated: true)
+            
             
         default:
             ()
